@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Delights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f0e3; /* Light cream color */
+            color: #442c2e; /* Dark brown text color */
+        }
+        header {
+            background-color: #5e454b; /* Dark brown */
+            color: #f7f0e3; /* Light cream text color */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #835858; /* Dark red */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #f7f0e3; /* Light cream text color */
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #a76b6b; /* Light red on hover */
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #835858; /* Dark red */
+            min-width: 160px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #5e454b; /* Dark brown */
+            color: #f7f0e3; /* Light cream text color */
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0e1d2; /* Lighter cream color */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: left; /* Align form contents to the left */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Chocolate Delights!</h1>
+        <p>Indulge in the finest chocolate treats.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <div class="dropdown">
+            <a href="#">Products</a>
+            <div class="dropdown-content">
+                <a href="#">Chocolate Bars</a>
+                <a href="#">Truffles</a>
+                <a href="#">Assorted Chocolates</a>
+            </div>
+        </div>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Our Delicious Products</h2>
+        <p>Explore our range of handcrafted chocolates made with love.</p>
+        <div>
+            <img src="chocolate_bar.jpg" alt="Chocolate Bar" style="width: 200px; margin: 10px;">
+            <img src="truffles.jpg" alt="Truffles" style="width: 200px; margin: 10px;">
+            <img src="assorted_chocolates.jpg" alt="Assorted Chocolates" style="width: 200px; margin: 10px;">
+        </div>
+    </section>
+
+    <section>
+        <h2>Discover Our Specialties</h2>
+        <p>From classic milk chocolate bars to luxurious truffles, we have something for everyone.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Chocolate Delights. All rights reserved.</p>
+    </footer>
+
+    <form>
+        <h2>Get in Touch</h2>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" style="width: 300px; padding: 10px; margin-bottom: 10px;"><br>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" style="width: 300px; padding: 10px; margin-bottom: 10px;"><br>
+        
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message" style="width: 300px; height: 100px; padding: 10px; margin-bottom: 10px;"></textarea><br>
+        
+        <button type="submit" style="padding: 10px 20px; background-color: #835858; color: #f7f0e3; border: none; cursor: pointer;">Send</button>
+    </form>
+
+</body>
+</html>
